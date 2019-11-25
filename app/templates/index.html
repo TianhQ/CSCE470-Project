@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YelpBusiness</title>
+</head>
+<link rel="stylesheet" type="text/css" href="static/Semantic-UI-CSS-master/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="static/Semantic-UI-CSS-master/semantic.min.js"></script>
+<body>
+<h1 class="ui huge header">YelpBusiness</h1>
+<div class="main_section">
+    <p class = "first_sentence">Based on data from Yelp, we can help you to search surrounding competitors of your restaurant</p>
+    <p class= "second_sentence"> More importantly, we care about the success of your business</p>
+
+    <div class = "ui form">
+        <div class= "inline fields">
+            <div class = "field">
+                <div class="ui input focus">
+                    <div class = 'ui labeled input'>
+                        <div class="ui label" >
+                            Food Type
+                        </div>
+                        <input type="text" id = "food_type" placeholder="Chinese food, Italian food">
+                    </div>
+                </div>
+            </div>
+
+            <div class = "field">
+                <div class="ui input focus">
+                    <div class = 'ui labeled input'>
+                        <div class="ui label" >
+                            Zip Code
+                        </div>
+                        <input id="zip" name="zip" type="text" pattern="[0-9]*" placeholder="e.g. 77840">
+                    </div>
+                </div>
+            </div>
+
+            <button class="ui icon button">
+                <i class="inverted circular search link icon"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+</body>
