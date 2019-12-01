@@ -17,7 +17,7 @@
     <p class = "first_sentence">Based on data from Yelp, we can help you to search surrounding competitors of your restaurant</p>
     <p class= "second_sentence"> More importantly, we care about the success of your business</p>
 
-    <div class = "ui form">
+    <form class = "ui form" action="/results" method="post">
         <div class= "inline fields">
             <div class = "field">
                 <div class="ui input focus">
@@ -25,7 +25,7 @@
                         <div class="ui label" >
                             Food Type
                         </div>
-                        <input type="text" id = "food_type" placeholder="Chinese food, Italian food">
+                        <input type="text" name = "food_type" id = "food_type" placeholder="Chinese food, Italian food">
                     </div>
                 </div>
             </div>
@@ -41,11 +41,11 @@
                 </div>
             </div>
 
-            <button class="ui icon button">
+            <button class="ui icon button" type = "submit">
                 <i class="inverted circular search link icon"></i>
             </button>
         </div>
-    </div>
+    </form>
 
 </div>
 </body>
