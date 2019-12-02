@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <title>SearchResults: YelpBusiness</title>
 </head>
-<link rel="stylesheet" type="text/css" href="static/Semantic-UI-CSS-master/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="static/semantic-UI-CSS-master/semantic.min.css">
 <link rel="stylesheet" type="text/css" href="static/result_page.css">
 <script
         src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
 <script src="static/Semantic-UI-CSS-master/semantic.min.js"></script>
+<script type="text/javascript">$(document).ready(function(){$(".rating").rating('disable');});</script>
 <body>
-<div class="ui huge menu">
-    <div class="header item">
-        YelpBusiness
+    <div class="ui huge menu">
+        <div class="header item">
+            YelpBusiness
+        </div>
+        <a class="item">
+            About Us
+        </a>
     </div>
-    <a class="item">
-        About Us
-    </a>
-</div>
-<h2>Here is Your "Scariest" Competitor:</h2>
-<p>The name is {{ name }}</p>
-<p>Your competitor is located at {{ address }} </p>
-<p>{{ zip }}</p>
-<p>Rating is {{ rating }}</p>
+    <div class="main">
+        <h2>Here is Your "Scariest" Competitor:</h2>
+        <p>{{ name }}</p>
+        <p>Your competitor is located at {{ address }}, {{ city }}, {{ state }}, {{ zip_code }}</p>
+        <p>There are {{ count_reviews }} reviews</p>
+        <b>Rating: </b>
+        <div class="ui massive star rating"  data-max-rating="5" data-rating="3" ></div>
+        <div class="search">
+            <a href="/index">Search again</a>
+        </div>
+    </div>
 </body>
 </html>

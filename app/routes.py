@@ -15,6 +15,10 @@ def search_result():
     return render_template(
         'results.html',
         name='Chef Cao',
-        address='1800 Holleman Dr, College Station, TX',
+        address='1800 Holleman Dr',
+        city='College Station',
+        state='TX',
+        zip_code=77840,
+        count_reviews=200,
         rating=3.5
     )
