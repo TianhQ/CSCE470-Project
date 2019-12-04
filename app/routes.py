@@ -20,5 +20,6 @@ def search_result():
         state='TX',
         zip_code=77840,
         count_reviews=200,
-        rating=3.5
+        rating=3.5,
+        documents=[{'name':'lal', 'address':'56565 college'}, {'name':'lal', 'address':'56565 college'}, {'name':'lal', 'address':'56565 college'}]
     )

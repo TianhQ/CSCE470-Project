@@ -2,6 +2,17 @@ body{
     background-color: #F8FFFF;
 }
 
+
+.ui.list{
+    margin-top: 4%;
+    text-align: center;
+    display: inline-block;
+}
+
+.map.marker.icon{
+    display: inline-block;
+}
+
 .main{
     margin-top: 5%;
 }
@@ -15,7 +26,6 @@ p{
     text-align: center;
     font-size: 2rem;
 }
-
 b{
     margin-left: 40%;
     font-size: 2rem;
@@ -23,6 +33,6 @@ b{
 
 .search{
     font-size: 2rem;
-    margin-top: 4%;
+    margin-top: 2%;
     text-align: center;
 }

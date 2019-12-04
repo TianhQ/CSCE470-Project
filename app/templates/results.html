@@ -28,6 +28,20 @@
         <p>There are {{ count_reviews }} reviews</p>
         <b>Rating: </b>
         <div class="ui massive star rating"  data-max-rating="5" data-rating="3" ></div>
+           <div class="ui list">
+            {% for docs in documents %}
+            <div class="item">
+                <i class="map marker icon"></i>
+                <div class="content">
+                    <a class="header">{{ docs[name] }}</a>
+                    <div class="description">located at {{ docs.get('address') }}, {{ docs.get('city') }}, {{ docs.get('state') }}, {{ docs.get('postal_code') }}</div>
+                    <div class="description">number of reviews: {{ docs.get('count_review') }}</div>
+                    <div class="description">rating: {{ docs.get('rating') }}</div>
+                </div>
+            </div>
+            {% endfor %}
+           </div>
+
         <div class="search">
             <a href="/index">Search again</a>
         </div>
